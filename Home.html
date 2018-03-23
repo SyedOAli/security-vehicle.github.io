@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+
+<title> Cyber Security in Connected Vehicle Radio Networks </title> 
+
+	</head> 
+
+
+<p style="font-size:30px; color:black;"><b>Cyber Security in Connected Vehicle Radio Networks</b></p>
+
+
+
+
+
+<body>
+<style>
+* {box-sizing: border-box}
+.title{
+font-size: 25px;
+}
+/* Set height of body and the document to 100% */
+body, html {
+    height: 110%;
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 16px;
+    font-size: 17px;
+    width: 16%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+*{
+ box-sizing: border-box;
+}
+
+.column{
+float: left;
+width:33.33%;
+padding: 5px;
+}
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+
+
+
+#Home {background-color: orange;}
+#Communication {background-color: orange;}
+#Implementation {background-color: orange;}
+#Equipment {background-color: orange;}
+#Team {background-color: orange;}
+#FAQ {background-color: orange;}
+
+
+</style>
+
+
+
+
+<button class="tablink" onclick="openPage('Home', this, 'black')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Communication', this, 'black')">Communication</button>
+<button class="tablink" onclick="openPage('Implementation', this, 'black')">Implementation</button>
+<button class="tablink" onclick="openPage('Equipment', this, 'black')">Equipment</button>
+<button class="tablink" onclick="openPage ('Team', this, 'black')"> Team</button>
+<button class="tablink" onclick="openPage ('FAQ', this,'black')"> FAQ,</button>
+
+
+<div id="Home" class="tabcontent">
+  <h3>Objective: Security for Autonomous Vehicles</h3>
+		<h4> There is a phenomenal burst of interests in Connected Vehicles (CV) data, devices, infrastructures, services, and participants. 
+		Despite the potential benefits of CVs, significant security challenges remain to be addressed before widespread deployment of CVs in 
+		Intelligent Transportation Systems (ITS). As vehicles become increasingly connected, they face a growing range of cyber security vulnerabilities. 
+		In two classes of approaches, prevention-based (such as authentication) and detection-based (such as intrusion detection), can be used to protect 
+		wireless network</h4>
+	<h3> Security</h3>
+		<h4> Network security refers to the protection of access to files and directories in a network system against hacking, misuse and unauthorized
+		changes to the system </h4>
+	<h4> Lack of security leaves a system vulnerable to attack</h4>
+		<img src="images/securityvulnerability.jpg" height="250" width="250" alt="Different types of Attack"/>
+		<img src="images/maninthemiddle.png"  alt="man in the middle" />
+		<img src="images/injectattack.jpg"  alt="injectattack"/>
+		<img src="images/sniffingattack.png" alt="sniffingattack" />
+		
+		
+  <p></p>
+</div>
+
+<div id="Communication" class="tabcontent">
+  <h3>Communication</h3>
+  <h4>Connected Vehicles use a form of communication called V2X which contains BSM (Basic Safety Message) information</h4>
+  
+  <img src="images/bsm.png"  height="250" width="500" alt="Basic Serve Message" />	
+  <img src="images/v2x.png" height="250" width="500" alt="Vehicles To Vehicles" hspace="10"/> 
+  <h4> BSM contains information about the vehicle for example speed, direction, GPS and etc. The BSM information are  exchanged with different vehicles
+     which allow the vehicle to be more self aware.</h4>
+	<ul>
+    <li>Vehicle-To-Pedestrian [V2P]
+	<li> Vehicle-To-Network [V2N]
+	<li> Vehicle-To-Vehicle [V2V]
+	<li> Vehicle-To-Infrastructure [V2I] 
+	</ul>
+ 
+</div>
+
+<div id="Implementation" class="tabcontent">
+  <h3>Implementation</h3>
+  <p>What we implemented</p>
+</div>
+
+<div id="Equipment" class="tabcontent">
+
+  <h3>Equipment</h3>
+  
+ <div class="row">
+ <div class="column" >
+  <h3><b> RSU </b></h3> 
+  <br> 
+  <img  src="images/RSU-2.png" height="200" width="200" alt="Choda Roadside Unit" />
+  </div>
+  <div class="column">
+  <h3><b> OBU </b> </h3>
+<br>  
+  <img src="images/OBU.jpg" height="200" width="200" alt="Choda OnBoardUnit" /> 
+  </div> 
+  <div class="column" >
+  <h3><b> Cisco Switch </b> </h3>
+  <br>
+  <img src="images/download.jpg" height="200" width="200" alt="Cisco 2560 Switch" /> 
+  </div>
+  <div class="column" > 
+  <h3> <b>Kali Linux</b></h3>
+  <br>
+  <img src="images/kali.jpg" height="200" width="200" alt="Kali Linux Logo"/> 
+  </div>
+  
+</div>
+</div>
+
+<div id="FAQ" class="tabcontent">
+ <h3> FAQ questions</h3>
+ <p> FAQ</p>
+ </div>
+ 
+ <div id="Team" class="tabcontent">
+ <h3> Team </h3>
+ 
+ <p> Team Member</p>
+ <h1>Hodan</h1>
+ <img src="images/Hodan.jpg"  height="250" width="250" alt="Hodan"/>
+ </div>
+ 
+ 
+ 
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+</script>
+ </body>  
+
+</html> 
+
+
+
+
+	
